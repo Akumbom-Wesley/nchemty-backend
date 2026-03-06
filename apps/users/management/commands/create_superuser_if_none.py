@@ -33,6 +33,7 @@ class Command(BaseCommand):
             password=password,
             first_name=first_name,
             last_name=last_name,
+            phone_number=phone_number
         )
         self.stdout.write(
             self.style.SUCCESS(f"Superuser created: {email}")
