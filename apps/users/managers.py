@@ -36,7 +36,7 @@ class UserManager(BaseUserManager):
 
         return self._create_user(email, password, **extra_fields)
 
-    def create_superuser(self, email, password=None, phone_number, **extra_fields):
+    def create_superuser(self, email, phone_number, password=None, **extra_fields):
         """
         Creates a superuser for the Django admin.
         Superusers bypass the KYC flow entirely.
