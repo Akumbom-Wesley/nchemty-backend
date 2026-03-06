@@ -17,6 +17,7 @@ class Command(BaseCommand):
         password = os.environ.get("DJANGO_SUPERUSER_PASSWORD")
         first_name = os.environ.get("DJANGO_SUPERUSER_FIRST_NAME", "Admin")
         last_name = os.environ.get("DJANGO_SUPERUSER_LAST_NAME", "User")
+        phone_number = "673827652"
 
         if not email or not password:
             self.stdout.write(
