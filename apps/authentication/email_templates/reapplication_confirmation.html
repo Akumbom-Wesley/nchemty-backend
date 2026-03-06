@@ -1,0 +1,30 @@
+{% extends "authentication/email_templates/base.html" %}
+
+{% block content %}
+<p class="greeting">Hello {{ first_name }},</p>
+
+<span class="badge badge-pending">⟳ Reapplication Received</span>
+
+<p class="text">
+  We have received your reapplication for a Nchemty account.
+  Your new documents are now under review.
+</p>
+
+<div class="info-box">
+  <strong>Reapplication Details</strong><br/>
+  Email: {{ email }}<br/>
+  Account Type: {{ role }}<br/>
+  Submitted on: {{ submitted_date }}
+</div>
+
+<p class="text">
+  Our team will review your updated documents and notify you of
+  the outcome by email. This usually takes 1–2 business days.
+</p>
+
+<p class="text">
+  Please ensure that all submitted documents are clear, valid,
+  and match the information provided during registration.
+</p>
+{% endblock %}
+

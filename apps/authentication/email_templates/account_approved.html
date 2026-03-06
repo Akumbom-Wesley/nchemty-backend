@@ -1,0 +1,31 @@
+{% extends "authentication/email_templates/base.html" %}
+
+{% block content %}
+<p class="greeting">Hello {{ first_name }},</p>
+
+<span class="badge badge-approved">✓ Account Approved</span>
+
+<p class="text">
+  Great news! Your Nchemty account has been reviewed and approved.
+  Your identity has been successfully verified and your account is now active.
+</p>
+
+<div class="info-box">
+  <strong>Account Details</strong><br/>
+  Name: {{ full_name }}<br/>
+  Email: {{ email }}<br/>
+  Account Type: {{ role }}<br/>
+  Approved on: {{ approved_date }}
+</div>
+
+<p class="text">
+  You can now log in to your Nchemty account using your email address
+  and the password you set during registration.
+</p>
+
+<hr class="divider" />
+
+<p class="text">
+  Welcome to Nchemty — we are glad to have you on board.
+</p>
+{% endblock %}

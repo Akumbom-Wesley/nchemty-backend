@@ -1,0 +1,27 @@
+NCHEMTY — Application Not Approved
+=====================================
+
+Hello {{ first_name }},
+
+We have reviewed your Nchemty account application and unfortunately
+we are unable to approve it at this time.
+
+REASON FOR REJECTION
+---------------------
+{{ reason }}
+
+You are welcome to reapply by submitting a new application with
+corrected or updated documents. Please address the reason above
+before reapplying.
+
+HOW TO REAPPLY
+--------------
+Open the Nchemty app, go to the registration screen, and use
+the Reapply option. You will need your email address and password
+to reapply.
+
+If you believe this decision was made in error or need further
+assistance, please contact our support team.
+
+-------------------------------
+© Nchemty. All rights reserved.

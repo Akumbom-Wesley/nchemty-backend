@@ -1,0 +1,28 @@
+{% extends "authentication/email_templates/base.html" %}
+
+{% block content %}
+<p class="greeting">Hello {{ first_name }},</p>
+
+<p class="text">
+  Thank you for registering with Nchemty. To complete your registration,
+  please verify your email address using the code below.
+</p>
+
+<div class="otp-box">
+  <div class="otp-label">Your Verification Code</div>
+  <div class="otp-code">{{ otp_code }}</div>
+  <div class="otp-expiry">This code expires in {{ expiry_minutes }} minutes</div>
+</div>
+
+<p class="text">
+  Enter this code in the Nchemty app to verify your email address
+  and continue your account registration.
+</p>
+
+<div class="info-box">
+  <strong>What happens next?</strong><br/>
+  After verifying your email, your KYC documents will be reviewed
+  by our team. You will receive an email once your account has been
+  reviewed — this usually takes 1–2 business days.
+</div>
+{% endblock %}

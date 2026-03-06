@@ -1,0 +1,36 @@
+{% extends "authentication/email_templates/base.html" %}
+
+{% block content %}
+<p class="greeting">Hello {{ first_name }},</p>
+
+<span class="badge badge-rejected">✗ Application Not Approved</span>
+
+<p class="text">
+  We have reviewed your Nchemty account application and unfortunately
+  we are unable to approve it at this time.
+</p>
+
+<div class="info-box warning">
+  <strong>Reason for rejection:</strong><br/>
+  {{ reason }}
+</div>
+
+<p class="text">
+  You are welcome to reapply by submitting a new application with
+  corrected or updated documents. Please address the reason above
+  before reapplying.
+</p>
+
+<div class="info-box">
+  <strong>How to reapply:</strong><br/>
+  Open the Nchemty app, go to the registration screen, and use
+  the <strong>Reapply</strong> option. You will need your email
+  address and password to reapply.
+</div>
+
+<p class="text">
+  If you believe this decision was made in error or need further
+  assistance, please contact our support team.
+</p>
+{% endblock %}
+`

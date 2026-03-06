@@ -1,0 +1,22 @@
+NCHEMTY — Account Approved
+============================
+
+Hello {{ first_name }},
+
+Great news! Your Nchemty account has been reviewed and approved.
+Your identity has been successfully verified and your account is now active.
+
+ACCOUNT DETAILS
+---------------
+Name:         {{ full_name }}
+Email:        {{ email }}
+Account Type: {{ role }}
+Approved on:  {{ approved_date }}
+
+You can now log in to your Nchemty account using your email address
+and the password you set during registration.
+
+Welcome to Nchemty — we are glad to have you on board.
+
+-------------------------------
+© Nchemty. All rights reserved.

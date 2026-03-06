@@ -1,0 +1,22 @@
+NCHEMTY — Reapplication Received
+===================================
+
+Hello {{ first_name }},
+
+We have received your reapplication for a Nchemty account.
+Your new documents are now under review.
+
+REAPPLICATION DETAILS
+----------------------
+Email:        {{ email }}
+Account Type: {{ role }}
+Submitted on: {{ submitted_date }}
+
+Our team will review your updated documents and notify you of
+the outcome by email. This usually takes 1-2 business days.
+
+Please ensure that all submitted documents are clear, valid,
+and match the information provided during registration.
+
+-------------------------------
+© Nchemty. All rights reserved.

@@ -1,0 +1,25 @@
+NCHEMTY — Email Verification
+==============================
+
+Hello {{ first_name }},
+
+Thank you for registering with Nchemty.
+
+Your verification code is:
+
+    {{ otp_code }}
+
+This code expires in {{ expiry_minutes }} minutes.
+
+Enter this code in the Nchemty app to verify your email address.
+
+WHAT HAPPENS NEXT?
+After verifying your email, your KYC documents will be reviewed
+by our team. You will receive an email once your account has been
+reviewed — this usually takes 1-2 business days.
+
+-------------------------------
+If you did not create a Nchemty account, please ignore this email.
+Never share your OTP or password with anyone.
+
+© Nchemty. All rights reserved.
