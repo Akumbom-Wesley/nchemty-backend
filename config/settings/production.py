@@ -16,13 +16,19 @@ ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=Csv())
 
 import dj_database_url
 
-DATABASES = {
-    "default": dj_database_url.config(
-        default=config("DATABASE_URL"),
-        conn_max_age=600,
-        ssl_require=True,
+db_config = dj_database_url.config(
+    default=config("DATABASE_URL"),
+    conn_max_age=600,
+    ssl_require=True,
+)
+
+if not db_config:
+    raise Exception(
+        "DATABASE_URL is not set or could not be parsed. "
+        "Check your Render environment variables."
     )
-}
+
+DATABASES = {"default": db_config}
 
 # ─── Static files — WhiteNoise ────────────────────────────────
 
